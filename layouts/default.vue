@@ -1,9 +1,17 @@
 <template>
   <div>
-    <nuxt/>
+    <nuxt />
   </div>
 </template>
-
+<script>
+export default {
+  head() {
+    return {
+      title: '亿览态势'
+    }
+  }
+}
+</script>
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',

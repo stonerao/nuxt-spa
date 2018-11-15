@@ -35,10 +35,16 @@ module.exports = {
   */
   plugins: [
     '@/plugins/element-ui',
-    '@/plugins/axios',
-    '@/plugins/route'
+    '@/plugins/main',
+    '@/plugins/route', 
+    '@/plugins/i18n', 
   ],
-
+  generate: {
+    // routes: ['/', '/about', '/fr', '/fr/about']
+  },
+  router: {              // customize nuxt.js router (vue-router).
+    middleware: 'i18n'   // middleware all pages of the application
+  },
   /*
   ** Nuxt.js modules
   */
