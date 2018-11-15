@@ -29,6 +29,8 @@
     "@gauseen/nuxt-proxy": "^1.0.1",
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-prettier": "2.6.2",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
     "nodemon": "^1.11.0",
     "prettier": "1.14.3"
   }

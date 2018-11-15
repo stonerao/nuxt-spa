@@ -1,7 +1,7 @@
 <template>
   <section>
     <vue-progress-bar></vue-progress-bar>
-    <div>
+    <div class="">
       {{title}}
     </div>
   </section>
@@ -9,16 +9,15 @@
 
 <script>
 export default {
-  asyncData(params) { 
-    return params.$axios.get('/api/admin/contact').then(res => { 
+  asyncData(params) {
+    return params.$axios.get('/api/admin/contact').then(res => {
       return { title: res.data.code }
     })
   },
-  mounted() {
-   
-  }
+  mounted() {}
 }
 </script>
 
-<style>
+<style lang="less"> 
 </style>
+
